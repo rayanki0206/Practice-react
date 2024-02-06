@@ -2,7 +2,7 @@ name: output github context
 on: issues
 jobs:
   output:
+    runs-on: windows-latest
     steps:
-      runs-on: windows-latest
-      - name: printng github context
-        run: echo "${{toJSON(github)}}"
+    - name: printng github context
+      run: echo "${{toJSON(github)}}"
