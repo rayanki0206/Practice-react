@@ -1,0 +1,6 @@
+name: Output git context on issues
+on: issues
+jobs:
+  runs-on: windows-latest
+  steps:
+  
