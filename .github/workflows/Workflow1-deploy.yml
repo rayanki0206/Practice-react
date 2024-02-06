@@ -1,7 +1,7 @@
 name: deploy project
 on: push
 jobs:
-  tests:
+  test:
     runs-on: windows-latest
     steps:
       - name: Get code
@@ -20,5 +20,3 @@ jobs:
         run: npm run build
       -name: Deploy project
         run: echo "Deploying"
-
-  
